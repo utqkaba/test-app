@@ -12,4 +12,18 @@ export default defineConfig({
       },
     }),
   ],
+
+  test: {
+    environment: "jsdom",
+    globals: true,
+    setupFiles: "./src/setupTests.js",
+    css: true,
+    // ✅ Coverage ayarları
+    coverage: {
+      provider: "v8", // veya "istanbul" da kullanılabilir
+      reporter: ["text", "html"], // terminal + HTML raporu
+      reportsDirectory: "./coverage", // çıktılar buraya yazılır
+      exclude: ["src/setupTests.js"], // bu dosyayı kapsama dışı bırak
+    },
+  },
 });
