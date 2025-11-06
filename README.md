@@ -1,4 +1,4 @@
-# React Counter Test Project
+# Vitest & RTL Test Project
 
 A simple **React Counter component** built to practice **unit testing** with **Vitest** and **React Testing Library (RTL)**.
 
