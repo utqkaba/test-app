@@ -1,18 +1,30 @@
-# React + Vite
+# React Counter Test Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **React Counter component** built to practice **unit testing** with **Vitest** and **React Testing Library (RTL)**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+- [Vite](https://vite.dev)  
+- [Vitest](https://vitest.dev)  
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)  
+- [TailwindCSS](https://tailwindcss.com)
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Setup
+Install dependencies:
+```bash
+npm install
+```
+Run all tests:
+```bash
+npm test
+```
+Generate a coverage report:
+```bash
+npm test -- --coverage
+```
+After running tests with --coverage, an HTML report will be available at:
+```bash
+coverage/index.html
